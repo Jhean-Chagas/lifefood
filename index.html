@@ -4,21 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LIFEFOOD</title>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
-    <style>
-      .capa {
-        background-color: #BC1823;
-      }
-      .card img {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
+    <!-- MEU CSS EXTERNO -->
+    <link rel="stylesheet" href="style.css">
   </head>
 
-  <body style="background-color: #F8F9FA;">
-
+  <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -44,6 +38,7 @@
       </div>
     </nav>
 
+    <!-- CAPA -->
     <div class="capa">
       <div class="container py-5">
         <div class="row align-items-center">
@@ -51,6 +46,8 @@
           <div class="col-lg-6 text-white p-5 text-center text-lg-start">
             <h1 class="fw-bold display-4">Comida de Domingo</h1>
             <h3 class="fs-5">Comida deliciosa para todos os gostos!</h3>
+
+            <!-- BOTÃO CAPA -->
             <a class="btn btn-outline-light mt-3" href="https://wa.me/21987758393" target="_blank">
               <i class="bi bi-whatsapp me-2"></i> PEÇA AGORA
             </a>
@@ -64,50 +61,142 @@
       </div>
     </div>
 
-    <section class="container py-5">
+
+    <!--SEÇÃO DE HAMBÚRGUERES-->
+    <section id="produtos-section" class="container py-5">
+
+      <h2>Nossos Burgers</h2>
+
+      <div class="row g-4">
+        <!--CARD 1-->
+        <div class="col-md-4">
+          <div class="card produto-card p-3 text-center">
+            <img src="l1.png" alt="burger 1">
+            <h4>Burger Clássico</h4>
+            <p>Pão brioche, carne artesanal e molho especial.</p>
+            <p class="preco">R$ 22,90</p>
+            <a href="https://wa.me/55999999999" target="_blank" class="btn btn-danger">Pedir</a>
+          </div>
+        </div>
+
+        <!--CARD 2-->
+        <div class="col-md-4">
+          <div class="card produto-card p-3 text-center">
+            <img src="l1.png" alt="burger 2">
+            <h4>Cheddar Bacon</h4>
+            <p>Carne 160g, cheddar cremoso e bacon crocante.</p>
+            <p class="preco">R$ 27,90</p>
+            <a href="https://wa.me/55999999999" target="_blank" class="btn btn-danger">Pedir</a>
+          </div>
+        </div>
+
+        <!--CARD 3-->
+        <div class="col-md-4">
+          <div class="card produto-card p-3 text-center">
+            <img src="l1.png" alt="burger 3">
+            <h4>Burgão Duplo</h4>
+            <p>Dois smashs 100g e queijo duplo.</p>
+            <p class="preco">R$ 31,90</p>
+            <a href="https://wa.me/55999999999" target="_blank" class="btn btn-danger">Pedir</a>
+          </div>
+        </div>
+      </div>
+
+      <!--SEÇÃO DE BEBIDAS-->
+      <h2 class="mt-5">Nossas Bebidas</h2>
       <div class="row g-4">
 
+        <!--CARD 1-->
         <div class="col-md-4">
-          <div class="card h-100 text-center position-relative">
-            <div class="position-absolute" style="top: 8%; left: 8%;">
-              <i class="bi bi-heart-fill text-danger"></i>
-            </div>
-            <div class="mt-5">
-              <img src="l1.png" class="img-fluid" alt="Burger 1">
-            </div>
-            <h3 class="mt-3">Burgers Gourmet</h3>
-            <i class="bi bi-arrow-down-square"></i>
+          <div class="card produto-card p-3 text-center">
+            <img src="l2.png" alt="bebida 1">
+            <h4>Suco Natural</h4>
+            <p>Refrescante e feito na hora.</p>
+            <p class="preco">R$ 12,00</p>
+            <a href="https://wa.me/55999999999" target="_blank" class="btn btn-danger">Pedir</a>
           </div>
         </div>
 
+        <!--CARD 2-->
         <div class="col-md-4">
-          <div class="card h-100 text-center position-relative">
-            <div class="position-absolute" style="top: 8%; left: 8%;">
-              <i class="bi bi-heart-fill text-danger"></i>
-            </div>
-            <div class="mt-5">
-              <img src="l2.png" class="img-fluid" alt="Burger 2">
-            </div>
-            <h3 class="mt-3">Burgers Gourmet</h3>
-            <i class="bi bi-arrow-down-square"></i>
+          <div class="card produto-card p-3 text-center">
+            <img src="l2.png" alt="bebida 2">
+            <h4>Refrigerante</h4>
+            <p>Lata 350ml.</p>
+            <p class="preco">R$ 6,00</p>
+            <a href="https://wa.me/55999999999" target="_blank" class="btn btn-danger">Pedir</a>
           </div>
         </div>
 
+        <!--CARD 3-->
         <div class="col-md-4">
-          <div class="card h-100 text-center position-relative">
-            <div class="position-absolute" style="top: 8%; left: 8%;">
-              <i class="bi bi-heart-fill text-danger"></i>
-            </div>
-            <div class="mt-5">
-              <img src="l3.png" class="img-fluid" alt="Burger 3">
-            </div>
-            <h3 class="mt-3">Burgers Gourmet</h3>
-            <i class="bi bi-arrow-down-square"></i>
+          <div class="card produto-card p-3 text-center">
+            <img src="l2.png" alt="bebida 3">
+            <h4>Milkshake</h4>
+            <p>Chocolate, morango ou baunilha.</p>
+            <p class="preco">R$ 18,00</p>
+            <a href="https://wa.me/55999999999" target="_blank" class="btn btn-danger">Pedir</a>
+          </div>
+        </div>
+      </div>
+
+      <!--SEÇÃO DE SOBREMESAS-->
+      <h2 class="mt-5">Sobremesas</h2>
+
+      <div class="row g-4">
+        <!--CARD 1-->
+        <div class="col-md-4">
+          <div class="card produto-card p-3 text-center">
+            <img src="l3.png" alt="sobremesa 1">
+            <h4>Brownie</h4>
+            <p>Com cobertura de chocolate.</p>
+            <p class="preco">R$ 14,00</p>
+            <a href="https://wa.me/55999999999" target="_blank" class="btn btn-danger">Pedir</a>
+          </div>
+        </div>
+
+        <!--CARD 2-->
+        <div class="col-md-4">
+          <div class="card produto-card p-3 text-center">
+            <img src="l3.png" alt="sobremesa 2">
+            <h4>Mousse</h4>
+            <p>Sabor chocolate, maracujá ou limão.</p>
+            <p class="preco">R$ 10,00</p>
+            <a href="https://wa.me/55999999999" target="_blank" class="btn btn-danger">Pedir</a>
+          </div>
+        </div>
+
+        <!--CARD 3-->
+        <div class="col-md-4">
+          <div class="card produto-card p-3 text-center">
+            <img src="l3.png" alt="sobremesa 3">
+            <h4>Açaí</h4>
+            <p>250ml com granola e banana.</p>
+            <p class="preco">R$ 16,00</p>
+            <a href="https://wa.me/55999999999" target="_blank" class="btn btn-danger">Pedir</a>
           </div>
         </div>
 
       </div>
+
     </section>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/55999999999" class="whatsapp-btn" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <!-- FOOTER -->
+        <footer>
+      <h2>LIFEFOOD</h2>
+      <p>Comida deliciosa para todos os gostos!</p>
+      <div class="social">
+        <!-- REDES SOCIAIS -->
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+      </div>
+      <p>© 2025 LIFEFOOD – Todos os direitos reservados.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

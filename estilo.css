@@ -1,0 +1,157 @@
+/* ==============================
+   LIFEFOOD - ESTILOS PRINCIPAIS
+   Mantidos com comentários
+   ============================== */
+
+/* CSS do projeto Lifefood - Gradientes leves e estilo moderno */
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+  color: #222;
+}
+
+/* ===== Navbar ===== */
+nav {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff7b00, #ffbb55);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  opacity: 0.7;
+}
+
+/* ===== Seção Capa ===== */
+#capa {
+  margin-top: 80px;
+  width: 100%;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-image: url('img/l1.png');
+}
+
+#capa h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* ===== Seções ===== */
+section {
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ff7b00;
+  background: linear-gradient(90deg, #ff7b00, #ffaa33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== Cards ===== */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin-top: 12px;
+}
+
+/* ===== Botão Flutuante WhatsApp ===== */
+#whats {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(135deg, #25d366, #37ff86);
+  padding: 14px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+#whats:hover {
+  transform: scale(1.1);
+}
+
+#whats img {
+  width: 40px;
+}
+
+/* ===== Contato ===== */
+#contato img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  #capa h1 {
+    font-size: 34px;
+  }
+}
