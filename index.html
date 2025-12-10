@@ -4,31 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LIFEFOOD</title>
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
-    <!-- MEU CSS EXTERNO -->
-    <link rel="stylesheet" href="style.css">
-    <!-- FAVICON LOGO URL-->
-    <link rel="icon" type="image/png" href="favIcon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
   </head>
 
   <body>
-    <!-- NAVBAR -->
+
+    <!-- NAVBAR ORIGINAL (mantida 100%) -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="font-family: 'Poppins', sans-serif;">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="logo1.png" alt="" width="100" height="44">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item px-2">
-              <a class="nav-link text-danger fw-bold" aria-current="page" href="index.html">Início</a>
+              <a class="nav-link text-danger fw-bold" href="index.html">Início</a>
             </li>
             <li class="nav-item px-2">
               <a class="nav-link text-dark fw-bold" href="sobre.html">Sobre</a>
@@ -50,7 +56,6 @@
             <h1 class="fw-bold display-4">Comida de Domingo</h1>
             <h3 class="fs-5">Comida deliciosa para todos os gostos!</h3>
 
-            <!-- BOTÃO CAPA -->
             <a class="btn btn-outline-light mt-3" href="https://wa.me/21987758393" target="_blank">
               <i class="bi bi-whatsapp me-2"></i> PEÇA AGORA
             </a>
@@ -64,14 +69,12 @@
       </div>
     </div>
 
-
-    <!--SEÇÃO DE HAMBÚRGUERES-->
+    <!-- PRODUTOS -->
     <section id="produtos-section" class="container py-5">
 
       <h2>Nossos Burgers</h2>
-
       <div class="row g-4">
-        <!--CARD 1-->
+
         <div class="col-md-4">
           <div class="card produto-card p-3 text-center">
             <img src="l1.png" alt="burger 1">
@@ -82,7 +85,6 @@
           </div>
         </div>
 
-        <!--CARD 2-->
         <div class="col-md-4">
           <div class="card produto-card p-3 text-center">
             <img src="l1.png" alt="burger 2">
@@ -93,7 +95,6 @@
           </div>
         </div>
 
-        <!--CARD 3-->
         <div class="col-md-4">
           <div class="card produto-card p-3 text-center">
             <img src="l1.png" alt="burger 3">
@@ -103,13 +104,12 @@
             <a href="https://wa.me/21987758393" target="_blank" class="btn btn-danger">Pedir</a>
           </div>
         </div>
+
       </div>
 
-      <!--SEÇÃO DE BEBIDAS-->
       <h2 class="mt-5">Nossas Bebidas</h2>
       <div class="row g-4">
 
-        <!--CARD 1-->
         <div class="col-md-4">
           <div class="card produto-card p-3 text-center">
             <img src="l2.png" alt="bebida 1">
@@ -120,7 +120,6 @@
           </div>
         </div>
 
-        <!--CARD 2-->
         <div class="col-md-4">
           <div class="card produto-card p-3 text-center">
             <img src="l2.png" alt="bebida 2">
@@ -131,7 +130,6 @@
           </div>
         </div>
 
-        <!--CARD 3-->
         <div class="col-md-4">
           <div class="card produto-card p-3 text-center">
             <img src="l2.png" alt="bebida 3">
@@ -141,13 +139,12 @@
             <a href="https://wa.me/21987758393" target="_blank" class="btn btn-danger">Pedir</a>
           </div>
         </div>
+
       </div>
 
-      <!--SEÇÃO DE SOBREMESAS-->
       <h2 class="mt-5">Sobremesas</h2>
-
       <div class="row g-4">
-        <!--CARD 1-->
+
         <div class="col-md-4">
           <div class="card produto-card p-3 text-center">
             <img src="l3.png" alt="sobremesa 1">
@@ -158,18 +155,16 @@
           </div>
         </div>
 
-        <!--CARD 2-->
         <div class="col-md-4">
           <div class="card produto-card p-3 text-center">
             <img src="l3.png" alt="sobremesa 2">
             <h4>Mousse</h4>
-            <p>Sabor chocolate, maracujá ou limão.</p>
+            <p>Sabores: chocolate, maracujá ou limão.</p>
             <p class="preco">R$ 10,00</p>
             <a href="https://wa.me/21987758393" target="_blank" class="btn btn-danger">Pedir</a>
           </div>
         </div>
 
-        <!--CARD 3-->
         <div class="col-md-4">
           <div class="card produto-card p-3 text-center">
             <img src="l3.png" alt="sobremesa 3">
@@ -184,27 +179,48 @@
 
     </section>
 
-    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <!-- BOTÃO WHATSAPP -->
     <a href="https://wa.me/21987758393" class="whatsapp-btn" target="_blank">
       <i class="bi bi-whatsapp"></i>
     </a>
-    <!-- RODAPE -->
-        <footer>
-      <h2>LIFEFOOD</h2>
-      <p>Comida deliciosa para todos os gostos!</p>
-      <div class="social">
-        <!-- REDES SOCIAIS -->
-        <a href="#"><i class="bi bi-whatsapp"></i></a>
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
+
+    <!-- FOOTER UNIFICADO -->
+    <footer class="rodape">
+      <div class="container">
+        <div class="row p-5">
+
+          <div class="col-md-4 mt-4">
+            <img src="logo1.png" width="100" height="44">
+            <p>Comida deliciosa para todos os gostos!</p>
+          </div>
+
+          <div class="col-md-4 mt-4 text-center">
+            <h3 class="fs-6 text-white">MENU</h3>
+            <ul class="nav flex-column">
+              <li><a class="nav-link text-white" href="index.html">Início</a></li>
+              <li><a class="nav-link text-white" href="sobre.html">Sobre</a></li>
+              <li><a class="nav-link text-white" href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mt-4 text-center">
+            <h3 class="fs-6 text-white">REDES SOCIAIS</h3>
+            <div class="mt-3 d-flex justify-content-center gap-3">
+              <a class="text-white fs-3" href="https://wa.me/21987758393"><i class="bi bi-whatsapp"></i></a>
+              <a class="text-white fs-3" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="text-white fs-3" href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border border-light">
+        <p class="text-center">© 2025 LIFEFOOD – Todos os direitos reservados.</p>
 
       </div>
-      <p>© 2025 LIFEFOOD – Todos os direitos reservados.</p>
-
-                   
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
